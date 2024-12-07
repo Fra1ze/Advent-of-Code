@@ -74,7 +74,7 @@ def check(rules, line) -> bool:
 
 
 if __name__ == "__main__":
-    top, bottom = open("AOC 2024/data/Day Five.txt").read().strip().split("\n\n")
+    top, bottom = open("data/Day Five.txt").read().strip().split("\n\n")
 
     page_rules = [tuple(map(int, row.split("|"))) for row in top.splitlines()]
     data = [list(map(int, row.split(","))) for row in bottom.splitlines()]
