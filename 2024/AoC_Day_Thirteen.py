@@ -3,7 +3,7 @@ import re
 def partOne(machines):
     prizes_count = 0
     tokens_used = 0
-    # 10000000000000
+    
     for x1, y1, x2, y2, px, py in machines:
         ac = (px * y2 - py * x2) / (x1 * y2 - y1 * x2)
         bc = (px - x1 * ac) / x2
